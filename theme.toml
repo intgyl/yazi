@@ -1,0 +1,50 @@
+[flavor]
+dark = "tokyo-night"
+
+[status]
+sep_left  = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+
+[filetype]
+rules = [
+
+	# Images
+	{ mime = "image/*", fg = "#e0af68" },
+
+	# Media
+	{ mime = "video/*", fg = "#f7768e" },
+	{ mime = "audio/*", fg = "#f7768e" },
+
+	# Archives
+	{ url = "*.7z", fg = "#bb9af7" },
+	{ url = "*.zip", fg = "#bb9af7" },
+	{ url = "*.tar", fg = "#bb9af7" },
+	{ url = "*.gz", fg = "#bb9af7" },
+	{ url = "*.zip", fg = "#bb9af7" },
+	{ url = "*.bz2", fg = "#bb9af7" },
+	{ url = "*.xz", fg = "#bb9af7" },
+	{ url = "*.rar", fg = "#bb9af7" },
+	{ url = "*.deb", fg = "#bb9af7" },
+
+	# Documents
+	{ url = "*.doc", fg = "#4a90ed" },
+	{ url = "*.docx", fg = "#4a90ed" },
+	{ url = "*.odt", fg = "#4a90ed" },
+	{ url = "*.xls", fg = "#b0ba95" },
+	{ url = "*.xlsx", fg = "#b0ba95" },
+	{ url = "*.ppt", fg = "#ed834a" },
+	{ url = "*.pptx", fg = "#ed834a" },
+	{ url = "*.epub", fg = "#ed9e4a" },
+	{ url = "*.mobi", fg = "#ed9e4a" },
+	{ url = "*.pdf", fg = "#e8e1ed" },
+	{ url = "*.rtf", fg = "#9f78e3" },
+
+	# Special files
+	{ mime = "*", is = "orphan", fg = "#f29cb4", bg = "#93000a" },
+	{ mime = "application/*exec*", fg = "#9ece6a" },
+
+
+	# Fallback
+	{ url = "*", fg = "#c6d0f5" },
+	{ url = "*/", fg = "#7aa2f7" },
+]

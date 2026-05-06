@@ -1,0 +1,49 @@
+[[plugin.deps]]
+use = "boydaihungst/mediainfo"
+rev = "49f5ab7"
+hash = "6e3b5e58f985cc2d625e0030dc35b1b2"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "ac82af3"
+hash = "eff8ff12fa4e5f035a10d8aeeb4c258d"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:mount"
+rev = "ac82af3"
+hash = "77e20b071404f97c09d3f9afdb9482e0"
+
+[[plugin.deps]]
+use = "ndtoan96/ouch"
+rev = "406ce6c"
+hash = "f5afc904d5106ee368c8aa2ded43bd74"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "ac82af3"
+hash = "6849444b7c2df08eace83f3f86fb55a3"
+
+[[plugin.deps]]
+use = "AnirudhG07/rich-preview"
+rev = "7d616ad"
+hash = "d64feec9761392cbc250d199ab4b8a3a"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:zoom"
+rev = "ac82af3"
+hash = "fa268cb59989a87780605fdcfb8d99a9"
+
+[[plugin.deps]]
+use = "Gallardo994/clippy"
+rev = "8ce5541"
+hash = "977c6f4ffceada33ced20d941f1defab"
+
+[[plugin.deps]]
+use = "h-hg/yamb"
+rev = "5f2e22e"
+hash = "699fe07e0d2d1b4af8dafb84168eeb04"
+
+[[flavor.deps]]
+use = "BennyOe/tokyo-night"
+rev = "8e6296f"
+hash = "d9da921c3bd37ba32ee27a8a7a40461f"
