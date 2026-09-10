@@ -73,7 +73,7 @@ prepend_keymap = [
   # { on = "_", run = "tab_swap -1", desc = "与上一个标签页交换位置" },
   # { on = "+", run = "tab_swap 1",  desc = "与下一个标签页交换位置" },
 
-  { on = "<Esc>", run = "escape",             desc = "退出视觉模式、清除选择或取消搜索" },
+  { on = "<Esc>", run = "escape --all",       desc = "取消查找/搜索/过滤、退出视觉模式并清除所有选择" },
   { on = "q",     run = "quit",               desc = "退出程序" },
   { on = "Q",     run = "quit --no-cwd-file", desc = "退出且不输出cwd文件" },
   { on = "<C-c>", run = "close",              desc = "关闭当前标签页，如是最后一个则退出" },
@@ -123,7 +123,7 @@ prepend_keymap = [
   # =======================
   # 预览控制
   # =======================
-  { on = "<Space>",   run = "shell -- qlmanage -p %s", desc = "macos使用预览" },
+  { on = "<A-p>",     run = "shell -- qlmanage -p %s", desc = "macOS 快速预览 (QuickLook)" },
   { on = "<C-p>", run = "seek -5", desc = "预览向上跳转5个单位" },
   { on = "<C-n>", run = "seek 5",  desc = "预览向下跳转5个单位" },
   { on = "<Tab>", run = "spot", desc = "聚焦悬浮文件" },
@@ -136,6 +136,7 @@ prepend_keymap = [
   # { on = "O",         run = "open --interactive",          desc = "交互式打开选定文件" },
   { on = "<Enter>",   run = "open",                        desc = "打开选定文件" },
   { on = "<S-Enter>", run = "open --interactive",          desc = "交互式打开选定文件" },
+  { on = "<Space>",   run = "toggle",                  desc = "切换当前文件选中状态" },
   { on = "y",         run = ["yank", "plugin clippy"],    desc = "复制选定文件" },
   { on = "x",         run = "yank --cut",                  desc = "剪切选定文件" },
   { on = ["p","p"],         run = "paste",                       desc = "粘贴复制/剪切的文件" },
